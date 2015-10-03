@@ -14,6 +14,7 @@
 		0B7851731BC038C80061493F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7851711BC038C80061493F /* LaunchScreen.storyboard */; };
 		0B78517E1BC038C80061493F /* TwitterClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78517D1BC038C80061493F /* TwitterClientTests.swift */; };
 		0B7851891BC038C80061493F /* TwitterClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7851881BC038C80061493F /* TwitterClientUITests.swift */; };
+		0B7851971BC03A8E0061493F /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7851961BC03A8E0061493F /* Status.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0B7851841BC038C80061493F /* TwitterClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7851881BC038C80061493F /* TwitterClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClientUITests.swift; sourceTree = "<group>"; };
 		0B78518A1BC038C80061493F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B7851961BC03A8E0061493F /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0B78516F1BC038C80061493F /* Assets.xcassets */,
 				0B7851711BC038C80061493F /* LaunchScreen.storyboard */,
 				0B7851741BC038C80061493F /* Info.plist */,
+				0B7851961BC03A8E0061493F /* Status.swift */,
 			);
 			path = TwitterClient;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				0B78516B1BC038C80061493F /* ViewController.swift in Sources */,
 				0B7851691BC038C80061493F /* AppDelegate.swift in Sources */,
+				0B7851971BC03A8E0061493F /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

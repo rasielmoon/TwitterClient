@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import Social
+import Accounts
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
+    let SCREEN = UIScreen.mainScreen().bounds.size
+    
+    @IBOutlet var _tableView: UITableView?
+    var _accountStore: ACAccountStore?
+    var _account:ACAccount?
+    var _items = [Status]()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

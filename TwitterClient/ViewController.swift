@@ -20,19 +20,37 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var _items = [Status]()
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Twitterクライアント"
+    }
+    
+    func showAlert(title: NSString?,text: NSString?){
+        
     }
 
+    func initTwitterAccount(){
+        _account = nil
+        _accountStore = ACAccountStore()
+        let twitterType = _accountStore?.accountTypeWithAccountTypeIdentifier(ACAccountTypeIdentifierTwitter)
+        _accountStore?.requestAccessToAccountsWithType(twitterType, options:nil){(granted,error)in
+            if granted{
+                let accounts = self._accountStore?.accountsWithAccountType(twitterType)
+                if accounts!.count > 0{
+                    self._account = accounts![0] as? ACAccount
+                    self.timeline()
+                    return
+                }
+            }
+            dispatch_async(dispatch_get_main_queue(),{
+                self.showAlert(nil,text:"Twitterアカウントが登録されていません")
+            })
+        }
+    }
+    func timeline(){
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

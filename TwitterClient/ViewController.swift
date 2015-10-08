@@ -26,9 +26,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func showAlert(title: NSString?,text: NSString?){
-        
+        let alert = UIAlertController(title: title, message: text, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
+    func setIndicator(indicator : Bool){
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = indicator
+    }
+    
     func initTwitterAccount(){
         _account = nil
         _accountStore = ACAccountStore()

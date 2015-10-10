@@ -25,7 +25,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.title = "Twitterクライアント"
     }
     
-    func showAlert(title: NSString?,text: NSString?){
+    func showAlert(title: NSString,text: NSString?){
         let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.Alert)
         //(title: title, message: text, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
